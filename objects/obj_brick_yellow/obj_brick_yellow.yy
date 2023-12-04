@@ -30,10 +30,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": true,
-  "spriteId": {
-    "name": "spr_brick_yellow",
-    "path": "sprites/spr_brick_yellow/spr_brick_yellow.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

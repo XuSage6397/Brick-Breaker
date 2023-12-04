@@ -31,7 +31,7 @@ if(!_locked_to_bat)
 		
 		// We want the alpha to gradually fade so we base it on the
 		// current position in the list
-		draw_sprite_ext(spr_ball_final35, 0, _trail_x, _trail_y, 1, 1, 0, c_fuchsia, i/30);
+		draw_sprite_ext(spr_ball_final35, 0, _trail_x, _trail_y, 1, 1, 0, c_orange, i/30);
 	}
 }
 

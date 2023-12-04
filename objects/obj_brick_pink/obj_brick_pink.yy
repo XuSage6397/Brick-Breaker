@@ -30,10 +30,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": true,
-  "spriteId": {
-    "name": "spr_brick_pink",
-    "path": "sprites/spr_brick_pink/spr_brick_pink.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
