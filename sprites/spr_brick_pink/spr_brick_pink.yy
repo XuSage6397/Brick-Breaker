@@ -13,8 +13,8 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"17445e37-b722-4628-9778-019728ffa5d5",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c32e236e-79a5-4264-99bc-4c77a4718cb5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0a8ed4fe-c40f-463d-a05c-6d2f114f2c0e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4b864529-e957-46dc-8ac3-b2a29b3c9bf8",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -55,8 +55,8 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"17445e37-b722-4628-9778-019728ffa5d5","path":"sprites/spr_brick_pink/spr_brick_pink.yy",},},},"Disabled":false,"id":"bf2a369a-c160-4982-9509-4a77d37f1c12","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c32e236e-79a5-4264-99bc-4c77a4718cb5","path":"sprites/spr_brick_pink/spr_brick_pink.yy",},},},"Disabled":false,"id":"9d6e9be7-efc6-4674-8500-b932f529b7e4","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0a8ed4fe-c40f-463d-a05c-6d2f114f2c0e","path":"sprites/spr_brick_pink/spr_brick_pink.yy",},},},"Disabled":false,"id":"b07c2c6f-3f0d-493b-94ef-78607ae2eafe","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4b864529-e957-46dc-8ac3-b2a29b3c9bf8","path":"sprites/spr_brick_pink/spr_brick_pink.yy",},},},"Disabled":false,"id":"9f1a39cb-af74-40c2-b2c3-e52f3c1d0d5b","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
