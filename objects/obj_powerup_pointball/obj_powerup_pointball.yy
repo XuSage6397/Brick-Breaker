@@ -30,7 +30,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_pointball_final",
+    "path": "sprites/spr_pointball_final/spr_pointball_final.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

@@ -30,7 +30,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_multiball_final",
+    "path": "sprites/spr_multiball_final/spr_multiball_final.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

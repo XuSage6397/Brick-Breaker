@@ -30,7 +30,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_sizeup_final",
+    "path": "sprites/spr_sizeup_final/spr_sizeup_final.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

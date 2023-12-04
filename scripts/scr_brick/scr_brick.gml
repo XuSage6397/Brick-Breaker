@@ -106,7 +106,8 @@ function remove_all_bricks() {
 	
 	for (var _r = 0; _r < _rows;_r++) {
 		for (var _c = 0;_c < _cols;_c++) {
-			
+			instance_destroy(global.insts[_r,_c]);
+			global.insts[_r,_c] = noone;
 		}
 	}
 }

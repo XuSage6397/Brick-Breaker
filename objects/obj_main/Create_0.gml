@@ -3,7 +3,6 @@ randomize();
 
 // Hide the cursor
 window_set_cursor(cr_none);
-window_set_fullscreen(true);
 
 // Set the game state variables to their defaults
 score = global.old_score
