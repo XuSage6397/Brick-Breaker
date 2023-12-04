@@ -141,7 +141,6 @@
     {"id":{"name":"obj_brick_dynamic","path":"objects/obj_brick_dynamic/obj_brick_dynamic.yy",},},
     {"id":{"name":"obj_powerup_pointball","path":"objects/obj_powerup_pointball/obj_powerup_pointball.yy",},},
     {"id":{"name":"spr_button_homered","path":"sprites/spr_button_homered/spr_button_homered.yy",},},
-    {"id":{"name":"rm_infinity","path":"rooms/rm_infinity/rm_infinity.yy",},},
     {"id":{"name":"sfx_powerup_spawn","path":"sounds/sfx_powerup_spawn/sfx_powerup_spawn.yy",},},
     {"id":{"name":"sfx_button_click","path":"sounds/sfx_button_click/sfx_button_click.yy",},},
     {"id":{"name":"obj_menu_lose","path":"objects/obj_menu_lose/obj_menu_lose.yy",},},
@@ -159,7 +158,6 @@
   ],
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
-    {"roomId":{"name":"rm_infinity","path":"rooms/rm_infinity/rm_infinity.yy",},},
     {"roomId":{"name":"rm_level_1","path":"rooms/rm_level_1/rm_level_1.yy",},},
     {"roomId":{"name":"rm_level_2","path":"rooms/rm_level_2/rm_level_2.yy",},},
     {"roomId":{"name":"rm_level_3","path":"rooms/rm_level_3/rm_level_3.yy",},},
