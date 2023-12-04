@@ -13,6 +13,5 @@ if global.last_room == rm_death {
 }
 
 if room == rm_infinity {
-	room_set_persistent(rm_infinity, true);
 	alarm[0] = move_interval;
 }
