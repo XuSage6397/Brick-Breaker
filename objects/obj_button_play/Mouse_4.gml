@@ -3,6 +3,7 @@ global.old_score = 0;
 
 // Stop the menu music
 audio_stop_all();
+room_set_persistent(rm_infinity, false);
 
 // Play the button sound
 event_inherited();

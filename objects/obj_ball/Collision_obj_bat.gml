@@ -30,8 +30,4 @@ if(!_locked_to_bat)
 			audio_play_sound(sfx_bathit, 0, false);
 		}
 	}
-
-	createBrick();
-	// This doesn't use the move_bounce functions because we don't want the bat to snap back
-	// to its previous position and frustrate the player
 }
