@@ -7,7 +7,7 @@ window_set_cursor(cr_none);
 // Set the game state variables to their defaults
 score = global.old_score
 
-lives = 3;
+lives = 1;
 
 global.last_room = noone
 

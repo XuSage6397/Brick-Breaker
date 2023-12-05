@@ -18,7 +18,7 @@ if(_hitpoints <= 0)
 	// if it's exactly 0, spawn an extra life
 	if(_chance == 0)
 	{
-		instance_create_layer(x, y, "Instances", obj_powerup_extralife);
+		// instance_create_layer(x, y, "Instances", obj_powerup_extralife);
 	}
 	
 	// If it's 1 - 14, we create either a largebat or points powerup

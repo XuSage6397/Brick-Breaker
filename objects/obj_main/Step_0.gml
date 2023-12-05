@@ -57,9 +57,3 @@ if(_bricks_remaining <= 0)
 		instance_destroy(obj_powerup_base);
 	}
 }
-
-create_counter -= 1;
-
-if (create_counter <= 0) {
-    instance_create_layer(36, 27, "Instances", obj_brick_pink);
-}
