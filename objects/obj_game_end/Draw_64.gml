@@ -12,6 +12,6 @@ draw_set_font(fnt_font);
 
 // Then we draw the score to the screen
 draw_text_color(320, 13, string(score), _draw_colour, _draw_colour, _draw_colour, _draw_colour, 1);
-draw_text_color(320, 73, _highscore, _draw_colour, _draw_colour, _draw_colour, _draw_colour, 1);
+draw_text_color(430, 86, _highscore, _draw_colour, _draw_colour, _draw_colour, _draw_colour, 1);
 
 draw_set_font(_font_old);
