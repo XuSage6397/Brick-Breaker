@@ -10,25 +10,27 @@ image_index++;
 if(_hitpoints <= 0)
 {
 	// Add the appropriate reward to the player's score
-	score += _reward;
+	if (room != rm_death) {
+		score += _reward;
+	}
 
 	// We also want to randomly spawn a powerup so we get a random number between 0 and 99
 	var _chance = floor(irandom(99));
 
 	// if it's exactly 0, spawn an extra life
-	if(_chance == 0)
+	if(_chance == 0 and room != rm_death)
 	{
 		// instance_create_layer(x, y, "Instances", obj_powerup_extralife);
 	}
 	
 	// If it's 1 - 14, we create either a largebat or points powerup
-	else if(_chance < 15)
+	else if(_chance < 15 and room != rm_death)
 	{
 		instance_create_layer(x, y, "Instances", choose(obj_powerup_largebat, obj_powerup_pointball));
 	}
 
 	// if it's 16-19, we spawn a multiball powerup
-	else if(_chance < 20)
+	else if(_chance < 20 and room != rm_death)
 	{
 		instance_create_layer(x, y, "Instances", obj_powerup_multiball);
 	}

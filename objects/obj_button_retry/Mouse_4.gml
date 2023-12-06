@@ -2,8 +2,7 @@
 event_inherited();
 
 // Restart the room
-score = 0;
-global.old_score = 0;
+scr_restart();
 remove_all_bricks();
 
 room_goto(rm_infinity)

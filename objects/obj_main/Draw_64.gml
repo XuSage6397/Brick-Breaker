@@ -19,6 +19,20 @@ draw_set_font(fnt_font);
 // Then we draw the score to the screen
 draw_text_color(300, 13, string(score), _draw_colour, _draw_colour, _draw_colour, _draw_colour, 1);
 
+if room == rm_death {
+	draw_set_halign(fa_right)
+	draw_text(room_width, 13, "Time left: " + string(_timer))	
+	draw_set_halign(fa_left)
+}
+
 // And reset the font
 draw_set_font(_font_old);
 
+// Draw line to show play where is limit for the bricks
+if room == rm_infinity || room == rm_death {
+	var _y = global._height * global.max_rows + global._min_y - global._height/2
+	var _offset_x = 110
+	
+	draw_set_color(c_red)
+	draw_line(0 + _offset_x,_y,room_width - _offset_x,_y)
+}

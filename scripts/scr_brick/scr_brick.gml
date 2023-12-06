@@ -1,10 +1,12 @@
-global.max_rows = 10;
+global.max_rows = 18;
 global.max_cols = 10;
 global.insts = [global.max_rows][global.max_cols];
 global.rows = 5;
 global.cols = 15;
 global.total = 0;
 global.init_count = 60;
+global.remove_rows = 9;
+global.spawn_rate = 5;
 
 // Min locations for the bricks
 //global._min_x = 211;
@@ -94,6 +96,7 @@ function move_bricks() {
 		// Infinite level -> death level
 		if room == rm_infinity {
 			room_goto_next()
+			global.death_count += 1
 		} 
 		// Death level -> nfinite level
 		else if room == rm_death {

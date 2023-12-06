@@ -1,5 +1,2 @@
-global.last_room = room
-
-if room == rm_infinity {
-	global.old_score = score;
-}
+global.last_room = room;
+global.old_score = score;

@@ -7,10 +7,9 @@ window_set_cursor(cr_none);
 // Set the game state variables to their defaults
 score = global.old_score
 
-lives = 1;
-
-global.last_room = noone
-
+if !variable_global_exists("last_room") {
+	global.last_room = rm_infinity
+}
 global.paused = false;
 
 // And start the music! Also creating the effect for muffled audio
@@ -24,6 +23,16 @@ if (!audio_is_playing(Music_Ingame))
 
 create_interval = game_get_speed(gamespeed_fps) * 5;
 
-move_interval = game_get_speed(gamespeed_fps) * 5;
+if !variable_global_exists("speed_increment_threshold") {
+	global.speed_increment_threshold = 5000;
+}
+
+if !variable_global_exists("death_count") {
+	 global.death_count = 0
+}
+
+_timer = 0
+
+move_interval = game_get_speed(gamespeed_fps) * global.spawn_rate;
 
 create_counter = create_interval;

@@ -6,7 +6,5 @@ if (!audio_is_playing(sfx_brick_break))
 global.insts[_row][_col] = noone;
 
 if room == rm_death && _row = 0 {
-	global.old_score = score;
-	
-	room_goto_previous()
+	instance_create_layer(x, y, "Instances", obj_feather);
 }

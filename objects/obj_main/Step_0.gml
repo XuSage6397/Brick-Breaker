@@ -7,53 +7,18 @@ if(instance_exists(obj_menu_win) || instance_exists(obj_menu_lose))
 
 // If there are no balls left...
 if(!instance_exists(obj_ball))
-{
-	// Lose a life.
-	lives -= 1;
-
-	// If there are no lives left you lose
-	if(lives < 0)
-	{
-		if(!instance_exists(obj_menu_lose))
-		{
-			layer_sequence_create("Sequences", room_width / 2, room_height / 2, seq_menu_lose);
+{	
+	// Create a new ball!
+	instance_create_layer(obj_bat.x, obj_bat.y - 48, "Instances", obj_ball);
 		
-			instance_destroy(obj_ball);
-		
-			instance_destroy(obj_powerup_base);
-		}
-	}
-	// But if there are lives left...
-	else
-	{
-		// Create a new ball!
-		instance_create_layer(obj_bat.x, obj_bat.y - 48, "Instances", obj_ball);
-		
-		// And play a sound
-		audio_play_sound(sfx_ball_spawn, 0, false);
-	}
+	// And play a sound
+	audio_play_sound(sfx_ball_spawn, 0, false);
 }
 
-// Count ALL bricks.
-var _bricks_remaining = instance_number(obj_base_brick);
-
-// If no destroyable blocks remain, you win!
-if(_bricks_remaining <= 0)
-{
-	if(!instance_exists(obj_menu_win))
-	{
-		// If it's the final level we don't spawn the next button sequence
-		if(room == room_last)
-		{
-			layer_sequence_create("Sequences", room_width / 2, room_height / 2, seq_menu_end_game);
-		}
-		else
-		{
-			layer_sequence_create("Sequences", room_width / 2, room_height / 2, seq_menu_end_level);
-		}
-	
-		instance_destroy(obj_ball);
-	
-		instance_destroy(obj_powerup_base);
-	}
+// Increase spawn rate of new bricks based on score
+if score >= global.speed_increment_threshold {
+	global.speed_increment_threshold *= 1.25
+	global.spawn_rate /= 1.1
+	move_interval = game_get_speed(gamespeed_fps) * global.spawn_rate;
+	show_debug_message("Spawn speed: " + string(move_interval))
 }
