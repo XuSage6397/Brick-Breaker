@@ -1,5 +1,6 @@
 /// @description Insert description here
-// You can write your code in this editor
+
+
 if global.last_room == rm_death {
 	var _rows = array_length(global.insts);
 	var _cols = array_length(global.insts[0]);
@@ -14,4 +15,10 @@ if global.last_room == rm_death {
 
 if room == rm_infinity {
 	alarm[0] = move_interval;
+	audio_bus_main.bypass = true;	
 }
+else if room == rm_death {
+	//added muffled audio
+	audio_bus_main.bypass = false;
+}	
+else audio_bus_main.bypass = true;

@@ -1,5 +1,5 @@
 global.max_rows = 10;
-global.max_cols = 21;
+global.max_cols = 10;
 global.insts = [global.max_rows][global.max_cols];
 global.rows = 5;
 global.cols = 15;
@@ -7,8 +7,10 @@ global.total = 0;
 global.init_count = 60;
 
 // Min locations for the bricks
-global._min_x = 211;
-global._min_y = 185;
+//global._min_x = 211;
+global._min_x = 200;
+//global._min_y = 185;
+global._min_y = 148;
 // Height and Width of the bricks
 global._width = 75;
 global._height = 37;
