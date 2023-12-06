@@ -21,6 +21,8 @@ if (!audio_is_playing(Music_Ingame))
 	audio_bus_main.bypass = true;
 }
 
+alarm_times = noone;
+
 create_interval = game_get_speed(gamespeed_fps) * 5;
 
 if !variable_global_exists("speed_increment_threshold") {

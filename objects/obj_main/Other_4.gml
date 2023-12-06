@@ -25,11 +25,13 @@ else if room == rm_death {
 	//added muffled audio
 	audio_bus_main.bypass = false;
 	
-
-	global.death_timer = 60 * (1 / global.death_count)
+	// Set death timer
+	global.death_timer = 70 - (10 * global.death_count)
+	if global.death_timer <= 10 {
+		global.death_timer = 10
+	}
 	alarm[1] = global.death_timer * game_get_speed(gamespeed_fps)
 	_timer = global.death_timer
 	alarm[2] = game_get_speed(gamespeed_fps)
-
 }	
 else audio_bus_main.bypass = true;

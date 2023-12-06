@@ -22,3 +22,11 @@ if score >= global.speed_increment_threshold {
 	move_interval = game_get_speed(gamespeed_fps) * global.spawn_rate;
 	show_debug_message("Spawn speed: " + string(move_interval))
 }
+
+if global.paused {
+	for(var _i = 0;_i < 3;_i++) {
+		if alarm[_i] {
+			alarm[_i]++;//Stop alarm from happening
+		}
+	}
+}
